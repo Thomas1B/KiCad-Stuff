@@ -13,3 +13,11 @@ under a modify filename.
 The program reads both "CSV" and "XLSX" from the downloads folder, also saves in the downloads.
 
 To run: `python DigiKey_BOM_Editor.py`
+
+<hr>
+
+DigiKey BOM:
+![](images/DigiKey_BOM.png)
+
+Simplified BOM:
+![](images/simplified_BOM.png)
