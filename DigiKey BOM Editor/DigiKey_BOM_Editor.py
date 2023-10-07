@@ -123,7 +123,7 @@ def ask_user_to_save(file: str, BOM: pd.DataFrame):
     text += f'The editted BOM will be saved as "{new_filename}" in your downloads: '
     user = input(text)
     if user.lower() in ['yes', 'y']:
-        BOM.to_csv(f'{downloads_path}/{new_filename}')
+        BOM.to_csv(f'{downloads_path}/{new_filename}', index=False)
         print('BOM was saved!\n')
     else:
         print("BOM not saved.\n")
