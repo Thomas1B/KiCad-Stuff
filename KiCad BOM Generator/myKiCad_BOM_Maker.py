@@ -114,8 +114,9 @@ for count, group in enumerate(grouped, 1):
     ])
     out.writerow([])
 
-    # Removing XML File
-    path = os.path.splitext(sys.argv[2])[0].strip(' BOM')
-    xml_path = f'{path}.xml'
-    if os.path.exists(xml_path):
-        os.remove(xml_path)
+# Removing XML File
+path = os.path.splitext(sys.argv[2])[0].strip('KiCad BOM')
+xml_path = f'C{path}.xml'
+
+if os.path.exists(xml_path):
+    os.remove(xml_path)
